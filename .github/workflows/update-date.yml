@@ -10,7 +10,7 @@ on:
     # Every 5 minutes.
     # - cron: '*/5 * * * *'
     # At the beginning of every day.
-    - cron: "0 0 * * *"
+    - cron: "30 07 * * *"
 
 # on: [push]
 
@@ -27,8 +27,8 @@ jobs:
           cat README.md
       - name: Push to repository
         run: |
-          git config --global user.name "Lei Mao"
-          git config --global user.email "leimao@users.noreply.github.com"
+          git config --global user.name "Jhonson Harilaza"
+          git config --global user.email "lazarm520@users.noreply.github.com"
           now=$(date)
           git add -A
           git commit -m "Auto Push on $now"
